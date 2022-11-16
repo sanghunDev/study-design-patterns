@@ -9,7 +9,7 @@ public class Settings {
     }
 
     // 정적 팩토리 메서드 생성
-    public static Settings getInstance() {
+    public static synchronized Settings getInstance() {
         if (instance != null) {
             instance = new Settings();
         }
