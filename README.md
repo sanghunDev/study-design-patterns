@@ -8,6 +8,7 @@
 # 개발 환경
 * Build Tool : Maven
 * Java Version : 11
+* Spring Boot : 2.4.4
 
 # GoF의 디자인 패턴
 * 모든 개발자에게 권장하는 추천 도서 중 하나
