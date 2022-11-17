@@ -1,6 +1,8 @@
 package me.whiteship.designpatterns._01_creational_patterns._01_singleton;
 
-public class Settings {
+import java.io.Serializable;
+
+public class Settings implements Serializable {
 
     // 외부에서 new 키워드를 사용하지 못하게 기본 생성자에 private 설정
     private Settings() {
