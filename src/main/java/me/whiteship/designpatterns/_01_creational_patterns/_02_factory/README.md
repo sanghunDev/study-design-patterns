@@ -23,3 +23,10 @@
     * 해당 interface 를 구현하는 클래스, 상속 받는 클래스에서 사용 가능하다
     * 따라서 추상 클래스에서 하던 대부분의 일을 interface 에서 사용 가능하다
         * java8 에서는 추상 클래스 보다 interface 를 더 많이 사용하니 해당 메소드를 많이 활용해보자
+
+* 실무에서는 어떻게 쓰이나?
+  * 단순한 팩토리 패턴
+    * 매개변수의 값에 따라 또는 메소드에 따라 각기 다른 인스턴스를 리턴하는 단순한 버전의 팩토리 패턴
+  * java.lang.Calender 또는 java.lang.NumberFormat
+  * Spring BeanFactory
+    * Object 타입의 Product 를 만드는 BeanFactory 라는 Creator
