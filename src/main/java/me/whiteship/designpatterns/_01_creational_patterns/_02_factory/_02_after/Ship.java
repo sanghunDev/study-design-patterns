@@ -1,7 +1,7 @@
 package me.whiteship.designpatterns._01_creational_patterns._02_factory._02_after;
 
-import me.whiteship.designpatterns._01_creational_patterns._03_abstractFactory._01_before.SanghunAnchor;
-import me.whiteship.designpatterns._01_creational_patterns._03_abstractFactory._01_before.SanghunWheel;
+import me.whiteship.designpatterns._01_creational_patterns._03_abstractFactory._02_after.Anchor;
+import me.whiteship.designpatterns._01_creational_patterns._03_abstractFactory._02_after.Wheel;
 
 public class Ship {
 
@@ -10,6 +10,10 @@ public class Ship {
     private String color;
 
     private String logo;
+
+    private Wheel wheel;
+
+    private Anchor anchor;
 
     public String getName() {
         return name;
@@ -44,10 +48,19 @@ public class Ship {
                 '}';
     }
 
-    public void setAnchor(SanghunAnchor sanghunAnchor) {
+    public Wheel getWheel() {
+        return wheel;
     }
 
-    public void setWheel(SanghunWheel sanghunWheel) {
+    public void setWheel(Wheel wheel) {
+        this.wheel = wheel;
+    }
 
+    public Anchor getAnchor() {
+        return anchor;
+    }
+
+    public void setAnchor(Anchor anchor) {
+        this.anchor = anchor;
     }
 }
