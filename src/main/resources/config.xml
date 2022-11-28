@@ -7,6 +7,6 @@
         <constructor-arg value="hello"/>
     </bean>
 
-    <bean id="whiteship" class="me.whiteship.designpatterns._01_creational_patterns._03_abstract_factory._03_java.ShipFactory" />
+    <bean id="sanghunShip" class="me.whiteship.designpatterns._01_creational_patterns._03_abstractFactory._03_java.ShipFactory" />
 
 </beans>
