@@ -52,12 +52,12 @@ public class DefaultTourBuilder implements TourPlanBuilder {
             this.plans = new ArrayList<>();
         }
 
-        this.plans.add(plan);
+        this.plans.add(new DetailPlan(day,plan));
         return this;
     }
 
     @Override
     public TourPlan getPlan() {
-        return null;
+        return new TourPlan(title,nights,days,startDate,whereToStay,plans);
     }
 }
