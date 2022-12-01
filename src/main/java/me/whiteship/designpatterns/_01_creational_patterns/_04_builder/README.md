@@ -14,3 +14,12 @@
 ### 단점
 * 원하는 객체를 만들려면 빌더부터 만들어야 한다
 * 구조가 복잡해 진다. (트레이드 오프)
+
+### 실무에서 어떻게 쓰이나?
+* java 8 Stream.Builder API
+* 롬복의 @Builder
+    * https://projectlombok.org/features/Builder
+* Spring
+  * UriComponentsBuilder
+  * MockMvcWebClientBuilder
+  * …Builder
