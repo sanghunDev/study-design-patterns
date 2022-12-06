@@ -16,9 +16,12 @@ public class App {
         GithubIssue clone = (GithubIssue) githubIssue.clone();
         System.out.println("clone = " + clone.getUrl());
 
+        repository.setUser("tt");
         System.out.println(clone != githubIssue);
         System.out.println(clone.equals(githubIssue));
         System.out.println(clone.getClass() == githubIssue.getClass());
         System.out.println(clone.getRepository() == githubIssue.getRepository());
+        //tt로 변하지 않음
+        System.out.println("clone = " + clone.getUrl());
     }
 }

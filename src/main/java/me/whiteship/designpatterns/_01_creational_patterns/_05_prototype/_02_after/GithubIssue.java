@@ -42,7 +42,14 @@ public class GithubIssue implements Cloneable{
     //java 가 기본으로 제공해주는 clone (Object에 있다)
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        GithubRepository repository = new GithubRepository();
+        repository.setUser(this.repository.getUser());
+        repository.setName(this.repository.getName());
+
+        GithubIssue githubIssue = new GithubIssue(repository);
+        githubIssue.setId(this.id);
+        githubIssue.setTitle(this.title);
+        return githubIssue;
     }
 
     @Override
