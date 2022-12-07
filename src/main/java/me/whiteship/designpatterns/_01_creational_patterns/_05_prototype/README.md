@@ -17,3 +17,8 @@
 
 ### 단점
 * 복제한 객체를 만드는 과정 자체가 복잡할 수 있다. (특히, 순환 참조가 있는 경우)
+
+### 실무에서 어떻게 쓰이나?
+* JAVA Object 클래스의 clone 메소드와 Cloneable 인터페이스
+* shallow copy 와 deep copy (얕은 복사 , 깊은 복사)
+* ModelMapper
