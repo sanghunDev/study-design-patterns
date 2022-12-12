@@ -1,6 +1,9 @@
 package me.whiteship.designpatterns._01_creational_patterns._06_structuralPatterns._02_after;
 
-public class AccountService {
+import me.whiteship.designpatterns._01_creational_patterns._06_structuralPatterns._02_after.security.UserDetails;
+import me.whiteship.designpatterns._01_creational_patterns._06_structuralPatterns._02_after.security.UserDetailsService;
+
+public class AccountService implements UserDetailsService {
     public Account findAccountByUsername(String username) {
         Account account = new Account();
         account.setName(username);
@@ -15,5 +18,10 @@ public class AccountService {
 
     public void updateAccount(Account account) {
 
+    }
+
+    @Override
+    public UserDetails loadUser(String username) {
+        return findAccountByUsername(username);
     }
 }
