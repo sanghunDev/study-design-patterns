@@ -14,5 +14,12 @@ public class AdapterInJava {
          */
         Enumeration<String> enumeration = Collections.enumeration(strings);
 
+        /**
+         * enumeration 어댑티
+         * Collections.list 어댑터
+         * ArrayList 타겟 인터페이스
+         *
+         */
+        ArrayList<String> list = Collections.list(enumeration);
     }
 }
