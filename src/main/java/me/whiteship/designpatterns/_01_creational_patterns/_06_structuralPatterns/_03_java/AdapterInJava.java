@@ -1,25 +1,22 @@
 package me.whiteship.designpatterns._01_creational_patterns._06_structuralPatterns._03_java;
 
+import java.io.*;
 import java.util.*;
 
 public class AdapterInJava {
     public static void main(String[] args) {
-        //배열을 넘기지만 리스트로 반환됨
-        List<String> strings = Arrays.asList("1", "2", "3");// 배열을 리스트로 바꿀때 사용하는 방법인 Arrays.asList
 
-        /**
-         * strings 어댑티
-         * Collections.enumeration 어댑터
-         * Enumeration 타겟 인터페이스
-         */
-        Enumeration<String> enumeration = Collections.enumeration(strings);
+        //string을 넘기지만 InputStream 타입으로 변환됨
+        try (InputStream is = new FileInputStream("input.txt");
+             //InputStream 타입을 넘기지만 InputStreamReader 으로 변환됨
+             InputStreamReader isr = new InputStreamReader(is);
+             BufferedReader reader = new BufferedReader(isr)) {
+            while (reader.ready()) {
+                System.out.println(reader.readLine());
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
-        /**
-         * enumeration 어댑티
-         * Collections.list 어댑터
-         * ArrayList 타겟 인터페이스
-         *
-         */
-        ArrayList<String> list = Collections.list(enumeration);
     }
 }
