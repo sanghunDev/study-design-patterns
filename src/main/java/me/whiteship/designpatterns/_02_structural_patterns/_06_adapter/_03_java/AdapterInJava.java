@@ -1,4 +1,4 @@
-package me.whiteship.designpatterns._01_creational_patterns._06_structuralPatterns._03_java;
+package me.whiteship.designpatterns._02_structural_patterns._06_adapter._03_java;
 
 import java.io.*;
 import java.util.*;

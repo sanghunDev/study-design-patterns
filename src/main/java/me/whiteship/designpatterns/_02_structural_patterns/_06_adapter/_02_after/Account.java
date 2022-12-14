@@ -1,6 +1,8 @@
-package me.whiteship.designpatterns._01_creational_patterns._06_structuralPatterns._01_before;
+package me.whiteship.designpatterns._02_structural_patterns._06_adapter._02_after;
 
-public class Account {
+import me.whiteship.designpatterns._02_structural_patterns._06_adapter._02_after.security.UserDetails;
+
+public class Account implements UserDetails {
     private String name;
 
     private String password;
@@ -15,6 +17,12 @@ public class Account {
         this.name = name;
     }
 
+    @Override
+    public String getUsername() {
+        return this.name;
+    }
+
+    @Override
     public String getPassword() {
         return password;
     }

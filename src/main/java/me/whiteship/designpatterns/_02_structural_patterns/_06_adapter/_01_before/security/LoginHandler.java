@@ -1,4 +1,4 @@
-package me.whiteship.designpatterns._01_creational_patterns._06_structuralPatterns._01_before.security;
+package me.whiteship.designpatterns._02_structural_patterns._06_adapter._01_before.security;
 
 
 public class LoginHandler {
