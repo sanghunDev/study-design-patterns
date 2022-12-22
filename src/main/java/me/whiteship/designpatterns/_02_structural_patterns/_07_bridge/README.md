@@ -17,6 +17,8 @@
 * 계층 구조가 늘어나 복잡도가 증가할 수 있다
 
 ### 실무에서 어떻게 쓰이나?
+
+
 * JAVA
     * JDBC API, DriverManager 와 Driver
     * SLF4J, 로깅 퍼사드와 로거
