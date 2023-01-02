@@ -16,3 +16,12 @@
 
 * 단점
   * 데코레이터를 조합하는 코드가 복잡할 수 있다
+
+### 실무에서 어떻게 쓰이나?
+* Java
+  * InputStream, OutputStream, Reader, Writer 의 생성자를 활용한 랩퍼
+  * java.util.Collections 가 제공하는 메소드를 활용한 랩퍼
+  * javax.servlet.http.HttpServletRequest/ResponseWrapper
+
+* Spring
+  * ServerHttpRequestDecorator
